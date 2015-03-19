@@ -1,6 +1,6 @@
 # fbox
 
-Financial toolbox is a C++ library of general utilities and some more especialised libraries such as an agent-based simulation framework. 
+**fbox** is a C++ library of general utilities and some more especialised libraries such as an agent-based simulation framework.
 
 Dependencies:
 * Boost
