@@ -1,0 +1,16 @@
+FILE(GLOB SOURCES *.cpp)
+
+ADD_EXECUTABLE(test_simulate ${SOURCES})
+
+TARGET_LINK_LIBRARIES(test_simulate
+  core
+  simulate
+  tinyxml
+  ${Boost_UNIT_TEST_FRAMEWORK_LIBRARIES}
+  ${Boost_FILESYSTEM_LIBRARIES}
+  ${Boost_SYSTEM_LIBRARIES}
+  ${PLATFORM_LIBRARIES}
+)
+
+INSTALL(TARGETS test_simulate RUNTIME DESTINATION test/fbox)
+
